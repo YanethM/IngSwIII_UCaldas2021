@@ -6,3 +6,4 @@
 <option value="publicado"  {{ $val == 'publicado' ? 'selected ="selected"': ''}}>
     Publicado
 </option>
+

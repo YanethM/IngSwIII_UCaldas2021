@@ -9,6 +9,11 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware(['auth','rol.admin','rol.pub']);
+    }
     /**
      * Display a listing of the resource.
      *
